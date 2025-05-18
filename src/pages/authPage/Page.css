@@ -1,0 +1,35 @@
+.site-header {
+  background-color: rgba(7, 6, 6, 0.6) ; 
+  color: #ffffff; /* Texto branco para contraste */
+  padding: 20px;
+  text-align: center;
+  font-size: 32px; /* Aumenta o tamanho da fonte */
+  font-weight: bold;
+  font-family: "Comic Sans MS", "Arial", cursive; /* Fonte divertida */
+  border-radius: 15px; /* Bordas mais arredondadas */
+  margin-bottom: 20px;
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0); /* Sombra mais destacada */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0); /* Adiciona sombra ao texto */
+  animation: bounce 2s infinite; /* Animação para chamar atenção */
+}
+
+/* Animação de bounce */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Centraliza os componentes na página */
+.page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Altura total da tela */
+  padding: 20px;
+  box-sizing: border-box;
+  flex-direction: column; /* Alinha os itens verticalmente */
+}

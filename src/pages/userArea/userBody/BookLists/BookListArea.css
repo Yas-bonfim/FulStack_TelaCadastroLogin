@@ -3,9 +3,28 @@
   }
   
   .book-item {
-    border: 1px solid #ddd;
-    margin-bottom: 10px;
-    padding: 10px;
-    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.7); /* Mesma cor de fundo do LoginArea */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 20px; /* Espaçamento interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra semelhante */
+    color: #f4f4f4; /* Cor do texto */
+    margin-bottom: 15px; /* Espaçamento entre os cards */
+    border: none; /* Remove a borda padrão */
   }
   
+  .book-item h3 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #f4f4f4; /* Cor do título */
+  }
+  
+  .book-item p {
+    text-align: justify;
+    color: #f4f4f4; /* Cor do texto */
+  }
+  
+  .book-item:hover {
+    background-color: #f4f4f4; /* Cor de fundo ao passar o mouse */
+    color: rgba(0, 0, 0, 0.7); /* Cor do texto ao passar o mouse */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave */
+  }

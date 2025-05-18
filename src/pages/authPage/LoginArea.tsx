@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import { toast } from "react-toastify";
 import LoginUser from "../../api/LoginUser";
+import Header from "./Header";
+import "./Page.css";
 
 interface LoginAreaProps {
   backendUrl: string;
@@ -46,41 +48,43 @@ function LoginArea({ backendUrl }: LoginAreaProps) {
   };
 
   return (
-    <div className="auth-box">
-      <h2>Login</h2>
-      <form onSubmit={handleSubmit}>
-        <div>
-          <div className="form-group">
-            <label>Email:</label>
-            <input
-              type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              required
-            />
+    <div className="page-container">
+      <Header />
+      <div className="auth-box">
+        <h2>Login</h2>
+        <form onSubmit={handleSubmit}>
+          <div>
+            <div className="form-group">
+              <label>Email:</label>
+              <input
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                required
+              />
+            </div>
+            <div className="form-group">
+              <label>Senha:</label>
+              <input
+                type="password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                required
+                minLength={8}
+              />
+            </div>
+            <p>Entre com sua conta. Se não tiver uma, cadastre-se.</p>
           </div>
-          <div className="form-group">
-            <label>Senha:</label>
-            <input
-              type="password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              required
-              minLength={8}
-            />
-          </div>
-          <p>Entre com sua conta. Se não tiver uma, cadastre-se.</p>
-        </div>
-        <button type="submit" className="submit-button" disabled={isLoading}>
-          {isLoading ? "Entrando..." : "Entrar"}
-        </button>
-        <p className="register-link">
-          Não tem uma conta? <Link to="/register">Cadastre-se</Link>
-        </p>
-      </form>
+          <button type="submit" className="submit-button" disabled={isLoading}>
+            {isLoading ? "Entrando..." : "Entrar"}
+          </button>
+          <p className="register-link">
+            Não tem uma conta? <Link to="/register">Cadastre-se</Link>
+          </p>
+        </form>
+      </div>
     </div>
   );
 }
 
 export default LoginArea;
-

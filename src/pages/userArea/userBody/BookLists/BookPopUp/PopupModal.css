@@ -12,33 +12,73 @@
   }
   
   .popup-modal {
-    background-color: white;
-    padding: 24px;
-    border-radius: 8px;
-    max-width: 400px;
-    width: 90%;
+    background-color: rgba(0, 0, 0, 0.7); /* Mesma cor do LoginArea */
+    color: #f4f4f4;
+    border-radius: 10px;
+    padding: 20px;
+    width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* Alinha os elementos verticalmente */
+    gap: 20px; /* Espaçamento entre os elementos */
+  }
+  
+  .popup-modal h2 {
     text-align: center;
+    margin: 0;
+  }
+  
+  .popup-modal form {
+    display: flex;
+    flex-direction: column; /* Alinha os campos verticalmente */
+    gap: 15px; /* Espaçamento entre os campos */
+  }
+  
+  .popup-modal label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .popup-modal input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
   }
   
   .popup-buttons {
-    margin-top: 20px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between; /* Botões lado a lado */
+    gap: 10px; /* Espaçamento entre os botões */
+  }
+  
+  .confirm-button,
+  .cancel-button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    flex: 1; /* Faz os botões ocuparem o mesmo espaço */
   }
   
   .confirm-button {
-    background-color: #d33;
+    background-color: #4caf50; /* Verde */
     color: white;
-    padding: 8px 16px;
-    border: none;
-    border-radius: 4px;
+  }
+  
+  .confirm-button:hover {
+    background-color: #45a049;
   }
   
   .cancel-button {
-    background-color: #ccc;
-    color: #333;
-    padding: 8px 16px;
-    border: none;
-    border-radius: 4px;
+    background-color: #f44336; /* Vermelho */
+    color: white;
   }
   
+  .cancel-button:hover {
+    background-color: #d32f2f;
+  }
