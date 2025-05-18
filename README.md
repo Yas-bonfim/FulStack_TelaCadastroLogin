@@ -1,101 +1,35 @@
-# 📚 Sistema de Gerenciamento de Livros - Backend (Node.js + Express + MongoDB) + Frontend (React)
+📚 Biblioteca Mágica — Sistema de Listagem de Livros
+BookList é uma aplicação web que permite aos usuários cadastrar, visualizar, editar e deletar livros de sua biblioteca pessoal. O sistema inclui autenticação (login e cadastro), tornando a experiência personalizada e segura.
 
-Este projeto é uma aplicação web completa que permite a gestão de uma lista de livros com autenticação JWT. Ele é composto por:
+✨ Funcionalidades
+✅ Cadastro de novos usuários
 
-- Uma **API RESTful** desenvolvida em Node.js, Express e MongoDB;
-- Uma **interface web (frontend)** desenvolvida com React;
-- Integração entre frontend e backend usando token JWT e requisições HTTP protegidas.
+🔐 Login com autenticação via token
 
-📺 **Link do vídeo:** _[adicione aqui o link da sua apresentação/demo]_
+📖 Adição de novos livros com informações detalhadas
 
----
+✏️ Edição de livros existentes
 
-## 🚀 Funcionalidades
+❌ Remoção de livros
 
-### 🔐 Autenticação (Backend)
+📋 Visualização de uma lista com todos os livros cadastrados
 
-- Cadastro de usuário (`POST /register`)
-- Login com geração de token JWT (`POST /login`)
+📊 Classificação por status: "Lido", "Lendo" e "Quero ler"
 
-### 📚 CRUD de Livros (Backend - protegido por JWT)
+💬 Interface amigável e responsiva
 
-- Criar novo livro (`POST /books`)
-- Listar livros do usuário autenticado (`GET /books`)
-- Ver detalhes de um livro (`GET /books/:id`)
-- Atualizar todos os campos de um livro (`PUT /books/:id`)
-- Atualizar parcialmente (`PATCH /books/:id`)
-- Deletar livro (`DELETE /books/:id`)
+🧱 Tecnologias Utilizadas
+Frontend: React + TypeScript + Vite
 
-### 💻 Interface Web (Frontend em React)
+Estilização: CSS Modules
 
-- Tela de cadastro com feedback visual
-- Tela de login com armazenamento do token JWT e redirecionamento
-- Área logada protegida (dashboard)
-  - Listagem de livros do usuário
-  - Requisições autenticadas para o backend (com JWT)
-  - Botão de logout
-- Feedback visual para erros e sucesso (usando [react-toastify](https://fkhadra.github.io/react-toastify))
-- Indicação de carregamento durante requisições
-- Responsividade básica para dispositivos móveis
+Gerenciamento de Estado: React Hooks
 
----
+Requisições HTTP: Axios e Fetch API
 
-## 🧱 Estrutura do Projeto
+Backend: (esperado) API RESTful com suporte a JWT
 
-### Backend (`/api`)
+Autenticação: Token armazenado no localStorage
 
 
-### Frontend (`/frontend`)
-
-frontend/
-├── src/
-│ ├── components/ # Componentes reutilizáveis (ex: formulário de livros)
-│ ├── pages/ # Páginas da aplicação (Login, Cadastro, Dashboard)
-│ ├── auth.js # Funções auxiliares de autenticação
-│ ├── App.jsx # Rotas e navegação
-│ └── main.jsx # Ponto de entrada
-└── public/
-
-
-
----
-
-## ⚙️ Instalação e Execução
-
-### 🔧 Backend
-
-#### Pré-requisitos
-- Node.js >= 14
-- MongoDB local ou MongoDB Atlas
-
-#### Passos
-
-```bash
-# 1. Clonar o repositório
-git clone https://github.com/seu-usuario/seu-repositorio.git
-cd seu-repositorio
-
-# 2. Instalar as dependências
-npm install
-
-# 3. Criar o arquivo de variáveis de ambiente
-touch .env
-
-# .env (exemplo)
-PORT=3000
-MONGODB_URI=mongodb://localhost:27017/livros
-JWT_SECRET=sua_chave_secreta
-
-# 4. Iniciar o servidor
-npm start
-
-
-# 1. Acesse a pasta frontend
-cd frontend
-
-# 2. Instale as dependências
-npm install
-
-# 3. Execute o servidor de desenvolvimento
-npm run dev
 
