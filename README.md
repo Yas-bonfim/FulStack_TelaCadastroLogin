@@ -1,4 +1,4 @@
-## 📚 Estante Mágica — Sistema de Listagem de Livros
+# 📚 Estante Mágica — Sistema de Listagem de Livros
 
 Estante Mágica é uma aplicação web que permite aos usuários cadastrar, visualizar, editar e deletar livros de sua biblioteca pessoal. O sistema inclui autenticação (login e cadastro), tornando a experiência personalizada e segura.
 
@@ -34,7 +34,7 @@ Backend: (esperado) API RESTful com suporte a JWT
 
 Autenticação: Token armazenado no localStorage
 
-# 🚀 Como rodar o projeto
+## 🚀 Como rodar o projeto
 1. Clone o repositório:
 git clone https://github.com/Yas-bonfim/FulStack_TelaCadastroLogin.git
 cd FulStack_TelaCadastroLogin
