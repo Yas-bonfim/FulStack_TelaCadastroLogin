@@ -1,5 +1,7 @@
-📚 Biblioteca Mágica — Sistema de Listagem de Livros
-BookList é uma aplicação web que permite aos usuários cadastrar, visualizar, editar e deletar livros de sua biblioteca pessoal. O sistema inclui autenticação (login e cadastro), tornando a experiência personalizada e segura.
+📚 Estante Mágica — Sistema de Listagem de Livros
+Estante Mágica é uma aplicação web que permite aos usuários cadastrar, visualizar, editar e deletar livros de sua biblioteca pessoal. O sistema inclui autenticação (login e cadastro), tornando a experiência personalizada e segura.
+
+Link para o video demonstrativo: https://youtu.be/8G8vJpBiS70
 
 ✨ Funcionalidades
 ✅ Cadastro de novos usuários
